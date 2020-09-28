@@ -1,5 +1,5 @@
 Data Peserta Sanbercode Bootcamp React Native
 1. Nama: Teuku Muhammad Ammar		
 2. Email: ammarponteuku59@gmail.com
-3. Akun Gitlab: ammarponteuku59@gmail.com
+3. Akun Github: ammarponteuku59@gmail.com
 4. Akun Telegram: @Teuku Muhammad Ammar
