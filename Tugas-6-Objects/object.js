@@ -1,87 +1,118 @@
+console.log("Soal no. 1")
 function arrayToObject(arr) {
     if (arr.length <= 0) {
         return console.log("")
     }
     for (var i = 0; i < arr.length; i++) {
-        var newObject = {}
+        var newObj = {}
         var birthYear = arr[i][3];
-        var now = new Date().getFullYear()
+        var now = new Date();
+        var thisYear = now.getFullYear();
         var umur;
-        if (birthYear && now - birthYear > 0) {
-            umur = now - birthYear
+        if (birthYear && thisYear - birthYear > 0) {
+            umur = thisYear - birthYear
         } else {
             umur = "invalid Birth Year"
         }
-        newObject.firstName = arr[i][0]
-        newObject.lastName = arr[i][1]
-        newObject.gender = arr[i][2]
-        newObject.age = umur
+        newObj.firstName = arr[i][0]
+        newObj.lastName = arr[i][1]
+        newObj.gender = arr[i][2]
+        newObj.age = umur
 
-        var Output= (i + 1) + ' .' + newObject.firstName + ' ' + newObject.lastName + ' : '
+        var Output = (i + 1) + ' .' + newObj.firstName + ' ' + newObj.lastName + ' : '
 
         console.log(Output)
-        console.log(newObject)
-
+        console.log(newObj)
     }
 }
-    cono
+// Driver Code
 var people = [["Bruce", "Banner", "male", 1975], ["Natasha", "Romanoff", "female"]]
 arrayToObject(people)
+/*
+    1. Bruce Banner: { 
+        firstName: "Bruce",
+        lastName: "Banner",
+        gender: "male",
+        age: 45
+    }
+    2. Natasha Romanoff: { 
+        firstName: "Natasha",
+        lastName: "Romanoff",
+        gender: "female".
+        age: "Invalid Birth Year"
+    }
+*/
 
+var people2 = [["Tony", "Stark", "male", 1980], ["Pepper", "Pots", "female", 2023]]
+arrayToObject(people2)
+/*
+    1. Tony Stark: { 
+        firstName: "Tony",
+        lastName: "Stark",
+        gender: "male",
+        age: 40
+    }
+    2. Pepper Pots: { 
+        firstName: "Pepper",
+        lastName: "Pots",
+        gender: "female".
+        age: "Invalid Birth Year"
+    }
+*/
 
-
+console.log(" soal no. 2")
 function shoppingTime(memberId, money) {
     if (!memberId) {
         return " Mohon maaf, toko X hanya berlaku untuk member saja"
     } else if (money < 50000) {
         return "Mohon Maaf , uang tidak cukup"
     } else {
-        var newObject = {}
+        var newObj = {}
         var moneyChange = money;
-        var purchaseList = [];
+        var purcList = [];
         var sepatuStacattu = "Sepatu stacatu";
-        var bajuZoro = "Baju zoro";
-        var bajuHn = "Baju H&N"
-        var sweaterUniklooh = "Sweater Unikloh";
-        var casingHandphone = "Casing Handphone";
+        var bjZoro = "Baju zoro";
+        var bjHn = "Baju H&N"
+        var swUniklooh = "Sweater Unikloh";
+        var csHandphone = "Casing Handphone";
 
         var check = 0;
         for (var i = 0; moneyChange >= 50000 && check == 0; i++) {
             if (moneyChange >= 1500000) {
-                purchaseList.push(sepatuStacattu)
+                purcList.push(sepatuStacattu)
                 moneyChange -= 1500000
             } else if (moneyChange >= 500000) {
-                purchaseList.push(bajuZoro)
+                purcList.push(bjZoro)
                 moneyChange -= 500000
             } else if (moneyChange >= 250000) {
-                purchaseList.push(bajuHn)
+                purcList.push(bjHn)
                 moneyChange -= 250000
             } else if (moneyChange >= 175000) {
-                purchaseList.push(sweaterUniklooh)
+                purcList.push(swUniklooh)
                 moneyChange -= 175000
             } else if (moneyChange >= 50000) {
-                for (var j = 0; j <= purchaseList.length - 1; j++) {
-                    if (purchaseList[j] == casingHandphone) {
+                for (var j = 0; j <= purcList.length - 1; j++) {
+                    if (purcList[j] == csHandphone) {
                         check += 1
                     }
                 } if (check == 0) {
-                    purchaseList.push(casingHandphone)
+                    purcList.push(csHandphone)
                     moneyChange -= 50000
                 } else {
-                    purchaseList.push(casingHandphone)
+                    purcList.push(csHandphone)
                     moneyChange -= 50000
                 }
             }
 
         }
-        newObject.memberId = memberId
-        newObject.money = money
-        newObject.listPurchased = purchaseList
-        newObject.changeMoney = moneyChange
-        return newObject
+        newObj.memberId = memberId
+        newObj.money = money
+        newObj.listPurch = purcList
+        newObj.changeMoney = moneyChange
+        return newObj
     }
 }
-console.log("====nomor 2===")
+
 // TEST CASES
 console.log(shoppingTime('1820RzKrnWn08', 2475000));
 //{ memberId: '1820RzKrnWn08',
@@ -104,6 +135,7 @@ console.log(shoppingTime('234JdhweRxa53', 15000)); //Mohon maaf, uang tidak cuku
 console.log(shoppingTime()); ////Mohon maaf, toko X hanya berlaku untuk member saja
 console.log()
 
+console.log("Soal no.3")
 function naikAngkot(arrPenumpang) {
     var rute = ["A", "B", "C", "D", "E", "F"]
     var arrOutput = []
