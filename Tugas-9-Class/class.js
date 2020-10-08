@@ -22,6 +22,9 @@ console.log(sheep.cold_blooded) // false
 
 // Realese 1
 class Ape extends Animal {
+    constructor(name) {
+        super(name);
+    }
     get legs() {
         return 2;
     }
@@ -30,6 +33,9 @@ class Ape extends Animal {
     }
 }
 class Frog extends Animal {
+    constructor(name) {
+        super(name);
+    }
     get legs() {
         return 2;
     }
