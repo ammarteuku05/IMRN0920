@@ -20,7 +20,7 @@ console.log(sheep.legs) // 4
 console.log(sheep.cold_blooded) // false
 
 
-// Code class Ape dan class Frog di sini
+// Realese 1
 class Ape extends Animal {
     constructor(name) {
         super(name);
