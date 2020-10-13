@@ -8,7 +8,7 @@ export default class App extends Component {
     return (
       <View style={{ paddingTop: 20 }}>
         <Youtube />
-        {<Index />}
+        {/* {<Index />} */}
 
       </View>
     )
