@@ -1,17 +1,24 @@
-import React, { Component } from 'react'
-import { Text, View } from 'react-native';
-import Index from './Tugas/Tugas12';
-import Youtube from './Tugas/Tugas12/App'
+import { StatusBar } from 'expo-status-bar';
+import React from 'react';
+import { StyleSheet, Text, View } from 'react-native';
+import YoutuUi from './Tugas/Tugas12/App';
+import Login from './Tugas/Tugas13/Login';
 
-export default class App extends Component {
-  render() {
-    return (
-      <View style={{ paddingTop: 20 }}>
-        <Youtube />
-        {/* {<Index />} */}
-
-      </View>
-    )
-  }
+export default function App() {
+  return (
+    <View>
+      
+    </View>
+  );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});
+
 

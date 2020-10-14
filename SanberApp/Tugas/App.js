@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Image, TouchableOpacity, View, StyleSheet, FlatList, Text } from 'react-native';
-import { Icon } from 'react-native-vector-icons/MaterialIcons';
 import data from './Tugas/data.json'
 import VideoItem from './Component/VideoItem'
 import { FontAwesome5, MaterialCommunityIcons } from '@expo/vector-icons';
