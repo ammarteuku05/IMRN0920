@@ -5,6 +5,7 @@ import YoutuUi from './Tugas/Tugas12/App';
 import LoginScreen from './Tugas/Tugas13/LoginScreen';
 import RegisterScreen from './Tugas/Tugas13/RegisterScreen';
 import AboutScreen from './Tugas/Tugas13/AboutScreen';
+import TugasNavigation from './Tugas/TugasNavigation/index;'
 
 import Note from './Tugas/Tugas14/App';
 import SkillScreen from './Tugas/Tugas14/SkillScreen';
@@ -13,12 +14,13 @@ import SkillScreen from './Tugas/Tugas14/SkillScreen';
 export default function App() {
   return (
     <View>
-      { /* <YoutuUi/> */
-/* <AboutScreen/>
+       {/* <YoutuUi/> 
+ <AboutScreen/>
 <LoginScreen/>
-<RegisterScreen/> */}
+<RegisterScreen/> 
       <SkillScreen />
-      <Note />
+      <Note /> */}
+      <TugasNavigation/>
     </View>
   );
 }
