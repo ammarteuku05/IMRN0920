@@ -6,9 +6,11 @@ import LoginScreen from './Tugas/Tugas13/LoginScreen';
 import RegisterScreen from './Tugas/Tugas13/RegisterScreen';
 import AboutScreen from './Tugas/Tugas13/AboutScreen';
 import TugasNavigation from './Tugas/TugasNavigation/index;'
-import Login from './Quiz3/Login';
-import Register from './Quiz3/Register';
-import Home from './Quiz3/HomeScreen';
+import Homescreens from './Quiz3/screens/Home';
+import Login from './Quiz3/screens/Login';
+import Regis from './Quiz3/screens/Register';
+import Splash from './Quiz3/screens/Splash';
+
 
 import Note from './Tugas/Tugas14/App';
 import SkillScreen from './Tugas/Tugas14/SkillScreen';
@@ -24,9 +26,10 @@ export default function App() {
       <SkillScreen />
       <Note />
       <TugasNavigation/> */}
+      <Splash/>
       <Login/>
-      <Register/>
-      <Home/>
+      <Regis/>
+      <Homescreens/>
     </View>
   );
 }
