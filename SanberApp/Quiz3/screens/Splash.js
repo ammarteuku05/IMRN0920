@@ -13,7 +13,7 @@ const Splash = ({ navigation }) => {
     return (
         <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
             <View style={{ width: 305, height: 305, backgroundColor: '#211F65', opacity: 0.1, borderRadius: 1000 }} />
-            <Image source={require('../../assets/images/sanber.png')} style={{ width: 223, height: 133, borderWidth: 2, position: 'absolute', top: 290 }} />
+            <Image source={require('../../assets/sanber.png')} style={{ width: 223, height: 133, borderWidth: 2, position: 'absolute', top: 290 }} />
         </View>
     )
 }

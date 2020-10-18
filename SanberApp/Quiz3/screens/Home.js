@@ -7,33 +7,33 @@ const Home = () => {
         <View style={styles.container}>
             <View style={styles.searchSetting}>  
                 <View style={styles.searchBar}>
-                    <Image source={require('../../assets/logo/search.png')} styles={styles.searchLogo}/>
+                    <Image source={require('../../assets/search.png')} styles={styles.searchLogo}/>
                     <Text style={styles.textSearchBar}>Search Product</Text>
                     <View style={styles.line}/>
-                    <Image source={require('../../assets/logo/camera.png')} style={styles.camera}/>
+                    <Image source={require('../../assets/camera.png')} style={styles.camera}/>
                 </View>
-                <Image source={require('../../assets/logo/lonceng.png')} style={styles.lonceng}></Image>
+                <Image source={require('../../assets/lonceng.png')} style={styles.lonceng}></Image>
             </View>
-            <Image source={require('../../assets/images/homeimage.png')} style={styles.homeImage}/>
+            <Image source={require('../../assets/homeimage.png')} style={styles.homeImage}/>
             <View style={styles.category}>
                 <View style={styles.categoryDetails}>
-                    <Image source={require('../../assets/logo/man.png')} style={styles.logoCategory}/>
+                    <Image source={require('../../assets/man.png')} style={styles.logoCategory}/>
                     <Text style={styles.logoText}>Man</Text>
                 </View>
                 <View style={styles.categoryDetails}>
-                    <Image source={require('../../assets/logo/woman.png')} style={styles.logoCategory}/>
+                    <Image source={require('../../assets/woman.png')} style={styles.logoCategory}/>
                     <Text style={styles.logoText}>Woman</Text>
                 </View>
                 <View style={styles.categoryDetails}>
-                    <Image source={require('../../assets/logo/kids.png')} style={styles.logoCategory}/>
+                    <Image source={require('../../assets/kids.png')} style={styles.logoCategory}/>
                     <Text style={styles.logoText}>Kids</Text>
                 </View>
                 <View style={styles.categoryDetails}>
-                    <Image source={require('../../assets/logo/home.png')} style={styles.logoCategory}/>
+                    <Image source={require('../../assets/home.png')} style={styles.logoCategory}/>
                     <Text style={styles.logoText}>Home</Text>
                 </View>
                 <View style={styles.categoryDetails}>
-                    <Image source={require('../../assets/logo/more.png')} style={styles.logoCategory}/>
+                    <Image source={require('../../assets/more.png')} style={styles.logoCategory}/>
                     <Text style={styles.logoText}>More</Text>
                 </View>
             </View>

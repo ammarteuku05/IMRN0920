@@ -25,11 +25,11 @@ const Login = ({ navigation }) => {
                 <Text style={styles.Or}>-OR-</Text>
                 <View style={styles.footer}>
                     <View style={styles.sosmed}>
-                        <Image source={require('../../assets/logo/facebook.png')} style={{width:16, height:16}}/>
+                        <Image source={require('../../assets/facebook.png')} style={{width:16, height:16}}/>
                         <Text style={styles.textSosmed}>Facebook</Text>
                     </View>
                     <View style={styles.sosmed1}>
-                    <Image source={require('../../assets/logo/google.png')} style={{width:16, height:16}}/>
+                    <Image source={require('../../assets/google.png')} style={{width:16, height:16}}/>
                         <Text style={styles.textSosmed}>Google</Text>
                     </View>
                 </View>
